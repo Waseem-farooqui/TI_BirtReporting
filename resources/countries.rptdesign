@@ -36,7 +36,7 @@
                     <value>resources/BirtReporting.jar;</value>
                 </ex-property>
             </list-property>
-            <property name="pojoDataSetClassPath">/opt/tomcat/webapps/BirtReporting/WEB-INF/classes/BirtReporting.jar;</property>
+            <property name="pojoDataSetClassPath">E:/TI/Java_work/TI_BirtReporting/resources/BirtReporting.jar;</property>
         </oda-data-source>
     </data-sources>
     <data-sets>
@@ -7699,12 +7699,21 @@
             <property name="marginTop">-40px</property>
             <property name="marginLeft">81px</property>
             <property name="marginRight">50px</property>
+            <property name="textAlign">justify</property>
             <property name="lineHeight">130%</property>
         </style>
         <style name="table-right" id="740">
             <property name="marginTop">-180px</property>
             <property name="marginLeft">380px</property>
             <property name="marginRight">50px</property>
+            <property name="height">300px</property>
+            <property name="width">400px</property>
+        </style>
+        <style name="center-graph" id="804">
+            <property name="marginTop">-10px</property>
+            <property name="marginLeft">181px</property>
+            <property name="marginRight">181px</property>
+            <property name="canShrink">true</property>
             <property name="height">300px</property>
             <property name="width">400px</property>
         </style>
@@ -7867,7 +7876,7 @@
 <FONT color=#EA0000 face="Calibri Light"><B>Source/Host Countries</B></P>]]></text-property>
         </text>
         <text name="TextGlobalCountries" id="602">
-            <property name="style">text-2</property>
+            <property name="style">no-section-text</property>
             <property name="pageBreakAfter">avoid</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P>The countries hosting IP addresses that are carrying out malicious activities in Pakistan cyberspace are shown.</P>]]></text-property>
@@ -8768,7 +8777,7 @@
             </list-property>
             <property name="inheritColumns">false</property>
             <property name="pageBreakAfter">auto</property>
-            <property name="marginTop">-170px</property>
+            <property name="marginTop">0px</property>
             <property name="height">300px</property>
             <property name="width">400px</property>
             <property name="dataSet">GlobalCountries</property>
@@ -8799,21 +8808,23 @@
                     <property name="allowExport">true</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right2</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <text name="LabelGlobalAttacks1" id="601">
             <property name="style">heading-2</property>
             <property name="fontSize">24px</property>
             <property name="marginRight">500px</property>
             <property name="paddingTop">1px</property>
-            <property name="pageBreakAfter">avoid</property>
+            <property name="pageBreakAfter">auto</property>
+            <property name="pageBreakInside">avoid</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P><FONT color=#676767 face="Calibri Light">Attack Distribution - </FONT>
 <FONT color=#EA0000 face="Calibri Light"><B>Top 3 Foreign Attackers</B></P>]]></text-property>
         </text>
         <text name="TextGlobalAttacks1" id="608">
-            <property name="style">text-2</property>
-            <property name="pageBreakAfter">avoid</property>
+            <property name="style">no-section-text</property>
+            <property name="textAlign">justify</property>
+            <property name="pageBreakAfter">auto</property>
             <property name="pageBreakInside">avoid</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P>The following figures present the
@@ -9979,7 +9990,7 @@ different regions of the World.</P>]]></text-property>
             </list-property>
             <property name="inheritColumns">false</property>
             <property name="pageBreakBefore">avoid</property>
-            <property name="marginTop">-300px</property>
+            <property name="marginTop">0px</property>
             <property name="height">300px</property>
             <property name="width">400px</property>
             <structure name="toc">
@@ -10000,7 +10011,7 @@ different regions of the World.</P>]]></text-property>
                     <property name="dataType">integer</property>
                 </structure>
             </list-property>
-            <property name="style">graph-global1</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <extended-item extensionName="Chart" name="ChartGlobalAttacks2" id="256">
             <xml-property name="xmlRepresentation"><![CDATA[<model:ChartWithAxes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attribute="http://www.birt.eclipse.org/ChartModelAttribute" xmlns:data="http://www.birt.eclipse.org/ChartModelData" xmlns:layout="http://www.birt.eclipse.org/ChartModelLayout" xmlns:model="http://www.birt.eclipse.org/ChartModel" xmlns:type="http://www.birt.eclipse.org/ChartModelType">
@@ -11152,6 +11163,7 @@ different regions of the World.</P>]]></text-property>
                 </structure>
             </list-property>
             <property name="inheritColumns">false</property>
+            <property name="marginTop">0px</property>
             <property name="marginRight">430px</property>
             <property name="height">300px</property>
             <property name="width">330px</property>
@@ -12350,12 +12362,13 @@ different regions of the World.</P>]]></text-property>
             <property name="marginRight">500px</property>
             <property name="paddingTop">1px</property>
             <property name="pageBreakAfter">avoid</property>
+            <property name="pageBreakInside">avoid</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P><FONT color=#676767 face="Calibri Light">Attacked </FONT>
 <FONT color=#EA0000 face="Calibri Light"><B>Services/Protocols</B></P>]]></text-property>
         </text>
         <text name="TextAttackedProtocols" id="616">
-            <property name="style">text-2</property>
+            <property name="style">no-section-text</property>
             <property name="pageBreakAfter">avoid</property>
             <property name="pageBreakInside">avoid</property>
             <property name="contentType">html</property>
@@ -13514,7 +13527,7 @@ list of protocols which were found being exploited for most number of attacks.</
 ]]></xml-property>
             <property name="outputFormat">SVG</property>
             <property name="inheritColumns">false</property>
-            <property name="pageBreakAfter">always</property>
+            <property name="pageBreakAfter">auto</property>
             <property name="height">300px</property>
             <property name="width">400px</property>
             <property name="dataSet">AttackedProtocols</property>
@@ -13532,7 +13545,7 @@ list of protocols which were found being exploited for most number of attacks.</
                     <property name="dataType">string</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <text name="LabelVulnerabilities" id="780">
             <property name="style">heading-2</property>
@@ -13540,6 +13553,7 @@ list of protocols which were found being exploited for most number of attacks.</
             <property name="marginRight">500px</property>
             <property name="paddingTop">1px</property>
             <property name="pageBreakAfter">avoid</property>
+            <property name="pageBreakInside">avoid</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P><FONT color=#676767 face="Calibri Light">Top </FONT>
 <FONT color=#EA0000 face="Calibri Light"><B>Vulnerabilities</B></P>]]></text-property>
@@ -13672,15 +13686,15 @@ list of protocols which were found being exploited for most number of attacks.</
         <text name="LabelProbedCountries" id="619">
             <property name="style">heading-2</property>
             <property name="fontSize">24px</property>
-            <property name="marginRight">500px</property>
+            <property name="marginRight">480px</property>
             <property name="paddingTop">1px</property>
             <property name="pageBreakAfter">avoid</property>
             <property name="contentType">html</property>
-            <text-property name="content"><![CDATA[<P><FONT color=#676767 face="Calibri Light">Most Probing - </FONT>
-<FONT color=#EA0000 face="Calibri Light"><B>Countries</B></P>]]></text-property>
+            <text-property name="content"><![CDATA[<P><FONT color=#676767 face="Calibri Light">Most Probing</FONT>
+<FONT color=#EA0000 face="Calibri Light"><B> Countries</B></P>]]></text-property>
         </text>
         <text name="TextProbedCountries" id="620">
-            <property name="style">text-2</property>
+            <property name="style">no-section-text</property>
             <property name="pageBreakAfter">avoid</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P>The IP Countries
@@ -14623,7 +14637,7 @@ exploited.</P>]]></text-property>
                     <property name="allowExport">true</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right2</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <text name="LabelProbedCountriesUniqueIPs" id="621">
             <property name="style">heading-2</property>
@@ -14638,7 +14652,8 @@ exploited.</P>]]></text-property>
         </text>
         <text name="TextProbedCountriesUniqueIPs" id="622">
             <property name="style">no-section-text</property>
-            <property name="pageBreakAfter">avoid</property>
+            <property name="pageBreakAfter">auto</property>
+            <property name="pageBreakInside">avoid</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P>The following figure shows the countries
 hosting the highest number of unique IP
@@ -15575,7 +15590,7 @@ connections and doing probing.</P>]]></text-property>
                     <property name="allowExport">true</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right2</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <text name="LabelProbedIPs" id="623">
             <property name="style">heading-2</property>
@@ -15583,13 +15598,13 @@ connections and doing probing.</P>]]></text-property>
             <property name="marginRight">500px</property>
             <property name="paddingTop">1px</property>
             <property name="pageBreakAfter">auto</property>
-            <property name="pageBreakBefore">always</property>
+            <property name="pageBreakBefore">auto</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P><FONT color=#676767 face="Calibri Light">Most Probing </FONT>
 <FONT color=#EA0000 face="Calibri Light"><BR><B>IP Addresses</B></P>]]></text-property>
         </text>
         <text name="TextProbedIPs" id="624">
-            <property name="style">text-2</property>
+            <property name="style">no-section-text</property>
             <property name="pageBreakAfter">avoid</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P>Following figure shows the list of
@@ -16533,7 +16548,7 @@ probing.</P>]]></text-property>
                     <property name="allowExport">true</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right2</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <table name="TableProbedIPs" id="142">
             <property name="style">table-center</property>
@@ -16672,8 +16687,9 @@ probing.</P>]]></text-property>
 <FONT color=#EA0000 face="Calibri Light"><B>Countries</B></P>]]></text-property>
         </text>
         <text name="TextMalwareCountries" id="632">
-            <property name="style">text-2</property>
-            <property name="pageBreakAfter">avoid</property>
+            <property name="style">no-section-text</property>
+            <property name="color">black</property>
+            <property name="pageBreakAfter">auto</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P>Following are the list of Countries
 that are doing most number of
@@ -17606,7 +17622,7 @@ systems are exploited in this process.</P>]]></text-property>
                     <property name="allowExport">true</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right2</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <text name="LabelMalwareIPs" id="633">
             <property name="style">heading-2</property>
@@ -17620,7 +17636,8 @@ systems are exploited in this process.</P>]]></text-property>
 <FONT color=#EA0000 face="Calibri Light"><BR><B>IP Addresses</B></P>]]></text-property>
         </text>
         <text name="TextMalwareIPs" id="634">
-            <property name="style">text-2</property>
+            <property name="style">no-section-text</property>
+            <property name="fontFamily">"Calibri"</property>
             <property name="pageBreakAfter">avoid</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P>Following are the list of Countries
@@ -18809,7 +18826,7 @@ systems are exploited in this process.</P>]]></text-property>
                     <property name="dataType">string</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right2</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <table name="TableMalwareIPs" id="164">
             <property name="style">table-center</property>
@@ -19025,20 +19042,20 @@ list of suspicious IP addresses.</P>]]></text-property>
             <property name="fontSize">24px</property>
             <property name="marginRight">500px</property>
             <property name="paddingTop">1px</property>
-            <property name="pageBreakAfter">avoid</property>
+            <property name="pageBreakAfter">auto</property>
             <property name="pageBreakInside">avoid</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P><FONT color=#676767 face="Calibri Light">Top Few</FONT>
 <FONT color=#EA0000 face="Calibri Light"><B> Detected Malwares</B></P>]]></text-property>
         </text>
         <text name="TextDetectedMalwares" id="673">
-            <property name="style">text-2</property>
-            <property name="pageBreakAfter">avoid</property>
-            <property name="pageBreakBefore">avoid</property>
+            <property name="style">no-section-text</property>
+            <property name="marginTop">-40px</property>
+            <property name="pageBreakAfter">auto</property>
+            <property name="pageBreakBefore">auto</property>
             <property name="contentType">html</property>
-            <text-property name="content"><![CDATA[<P>Following table gives the list of top most frequently detected malwares in Pakistan cyberspace. The naming convention
-used for these malwares is based on Kaspersky Lab detection. You can find the same malware with different name which
-are given to them by other antivirus engines.</P>]]></text-property>
+            <text-property name="content"><![CDATA[Following table gives the list of top most frequently detected malwares in Pakistan cyberspace. The naming convention
+used for these malwares is based on Kaspersky Lab detection. You can find the same malware with different name which are given to them by other antivirus engines.]]></text-property>
         </text>
         <extended-item extensionName="Chart" name="ChartDetectedMalwares" id="266">
             <xml-property name="xmlRepresentation"><![CDATA[<model:ChartWithAxes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attribute="http://www.birt.eclipse.org/ChartModelAttribute" xmlns:data="http://www.birt.eclipse.org/ChartModelData" xmlns:layout="http://www.birt.eclipse.org/ChartModelLayout" xmlns:model="http://www.birt.eclipse.org/ChartModel" xmlns:type="http://www.birt.eclipse.org/ChartModelType">
@@ -20192,7 +20209,7 @@ are given to them by other antivirus engines.</P>]]></text-property>
                     <property name="dataType">string</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right2</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <text name="LabelDetectedMalwareHashes" id="753">
             <property name="style">heading-2</property>
@@ -20466,8 +20483,8 @@ flooding attacks.</P>]]></text-property>
 <FONT color=#EA0000 face="Calibri Light"><B>Source/Host Countries</B></P>]]></text-property>
         </text>
         <text name="TextSipCountries" id="677">
-            <property name="style">text-2</property>
-            <property name="pageBreakAfter">avoid</property>
+            <property name="style">no-section-text</property>
+            <property name="pageBreakAfter">auto</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P>Following are the list of Countries
 that are doing most number of
@@ -21360,8 +21377,8 @@ SIP based attacks.</P>]]></text-property>
                 </structure>
             </list-property>
             <property name="inheritColumns">false</property>
-            <property name="pageBreakAfter">always</property>
-            <property name="marginTop">-160px</property>
+            <property name="pageBreakAfter">auto</property>
+            <property name="marginTop">-10px</property>
             <property name="height">300px</property>
             <property name="width">400px</property>
             <property name="dataSet">SipCountries</property>
@@ -21398,7 +21415,7 @@ SIP based attacks.</P>]]></text-property>
                     <property name="allowExport">true</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right2</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <text name="LabelSipAttacks" id="678">
             <property name="style">heading-2</property>
@@ -21411,7 +21428,7 @@ SIP based attacks.</P>]]></text-property>
 <FONT color=#EA0000 face="Calibri Light"><B>Distribution</B></P>]]></text-property>
         </text>
         <text name="TextSipAttacks" id="679">
-            <property name="style">text-2</property>
+            <property name="style">no-section-text</property>
             <property name="pageBreakAfter">avoid</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P>Following are the list of Application Layer Protocols of SIP based attacks that were exploited.</P>]]></text-property>
@@ -22588,7 +22605,7 @@ SIP based attacks.</P>]]></text-property>
                     <property name="dataType">string</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <text name="LabelSipRegistrarIPs" id="680">
             <property name="style">heading-2</property>
@@ -22596,6 +22613,7 @@ SIP based attacks.</P>]]></text-property>
             <property name="marginRight">500px</property>
             <property name="paddingTop">1px</property>
             <property name="pageBreakAfter">auto</property>
+            <property name="pageBreakInside">avoid</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P><FONT color=#676767 face="Calibri Light">Flooding  </FONT>
 <FONT color=#EA0000 face="Calibri Light"><B>Register Server Attacks</B></P>]]></text-property>
@@ -22615,7 +22633,7 @@ Following top IPs are found to be involved in REGISTER flooding:</P>]]></text-pr
         <table name="TableSipRegistrarIPs" id="274">
             <property name="style">table-center</property>
             <property name="marginTop">10px</property>
-            <property name="pageBreakAfter">always</property>
+            <property name="pageBreakAfter">auto</property>
             <property name="dataSet">SipRegistrarIPs</property>
             <list-property name="boundDataColumns">
                 <structure>
@@ -22918,7 +22936,7 @@ proxy server and end-user terminal:</P>]]></text-property>
 <FONT color=#EA0000 face="Calibri Light"><B>SIP Based Attacks</B></P>]]></text-property>
         </text>
         <text name="TextSipTools" id="703">
-            <property name="style">text-2</property>
+            <property name="style">no-section-text</property>
             <property name="pageBreakAfter">avoid</property>
             <property name="pageBreakInside">avoid</property>
             <property name="contentType">html</property>
@@ -24090,7 +24108,7 @@ proxy server and end-user terminal:</P>]]></text-property>
                     <property name="dataType">string</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <text name="LabelWebHeading" id="710">
             <property name="style">section-setting</property>
@@ -24126,7 +24144,7 @@ cyberspace.</P>]]></text-property>
 Most Web Attacks</B></P>]]></text-property>
         </text>
         <text name="TextWebCountries" id="713">
-            <property name="style">text-2</property>
+            <property name="style">no-section-text</property>
             <property name="pageBreakAfter">avoid</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P>The countries hosting IP Addresses
@@ -24941,6 +24959,9 @@ shown in the following figure</P>]]></text-property>
         </LeaderLineAttributes>
         <LeaderLineStyle>Fixed_Length</LeaderLineStyle>
         <LeaderLineLength>10.0</LeaderLineLength>
+        <Ratio>1.0</Ratio>
+        <Rotation>90.0</Rotation>
+        <Clockwise>true</Clockwise>
       </Series>
       <Grouping>
         <GroupType>Text</GroupType>
@@ -25009,7 +25030,7 @@ shown in the following figure</P>]]></text-property>
             <property name="outputFormat">SVG</property>
             <property name="inheritColumns">false</property>
             <property name="pageBreakAfter">auto</property>
-            <property name="marginTop">-170px</property>
+            <property name="marginTop">-10px</property>
             <property name="height">300px</property>
             <property name="width">400px</property>
             <property name="dataSet">WebCountries</property>
@@ -25033,7 +25054,7 @@ shown in the following figure</P>]]></text-property>
                     <property name="dataType">integer</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <text name="LabelWebIPs" id="716">
             <property name="style">heading-2</property>
@@ -25046,8 +25067,9 @@ shown in the following figure</P>]]></text-property>
 <FONT color=#EA0000 face="Calibri Light"><B>Most Web Attacks</B></P>]]></text-property>
         </text>
         <text name="TextWebIPs" id="717">
-            <property name="style">text-2</property>
-            <property name="pageBreakAfter">avoid</property>
+            <property name="style">no-section-text</property>
+            <property name="color">black</property>
+            <property name="pageBreakAfter">auto</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P>Following is the list of IP addresses
 which are found to be launching
@@ -26205,7 +26227,7 @@ from such attacks.</P>]]></text-property>
 ]]></xml-property>
             <property name="outputFormat">SVG</property>
             <property name="inheritColumns">false</property>
-            <property name="pageBreakAfter">always</property>
+            <property name="pageBreakAfter">auto</property>
             <property name="height">300px</property>
             <property name="width">400px</property>
             <property name="dataSet">WebIPs</property>
@@ -26235,7 +26257,7 @@ from such attacks.</P>]]></text-property>
                     <property name="dataType">string</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right2</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <table name="TableWebIPs" id="345">
             <property name="style">table-center</property>
@@ -26332,10 +26354,10 @@ from such attacks.</P>]]></text-property>
 <FONT color=#EA0000 face="Calibri Light"><B> Web Attacks</B></P>]]></text-property>
         </text>
         <text name="TextWebAttacks" id="719">
-            <property name="style">text-2</property>
-            <property name="pageBreakAfter">avoid</property>
+            <property name="style">no-section-text</property>
+            <property name="pageBreakAfter">auto</property>
             <property name="contentType">html</property>
-            <text-property name="content"><![CDATA[<P>Following are the list of Application Layer Protocols of SIP based attacks that were exploited.</P>]]></text-property>
+            <text-property name="content"><![CDATA[<P>Following are the list of Attacks.</P>]]></text-property>
         </text>
         <extended-item extensionName="Chart" name="ChartWebAttacks" id="752">
             <xml-property name="xmlRepresentation"><![CDATA[<model:ChartWithAxes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attribute="http://www.birt.eclipse.org/ChartModelAttribute" xmlns:data="http://www.birt.eclipse.org/ChartModelData" xmlns:layout="http://www.birt.eclipse.org/ChartModelLayout" xmlns:model="http://www.birt.eclipse.org/ChartModel" xmlns:type="http://www.birt.eclipse.org/ChartModelType">
@@ -27482,7 +27504,7 @@ from such attacks.</P>]]></text-property>
             </list-property>
             <property name="inheritColumns">false</property>
             <property name="pageBreakAfter">auto</property>
-            <property name="marginTop">-140px</property>
+            <property name="marginTop">-10px</property>
             <property name="height">300px</property>
             <property name="width">400px</property>
             <property name="dataSet">WebAttacks</property>
@@ -27513,7 +27535,7 @@ from such attacks.</P>]]></text-property>
                     <property name="allowExport">true</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <text name="LabelWebSeverities" id="749">
             <property name="style">heading-2</property>
@@ -27527,7 +27549,8 @@ from such attacks.</P>]]></text-property>
 <FONT color=#EA0000 face="Calibri Light"><B>Web Severities</B></P>]]></text-property>
         </text>
         <text name="TextWebSeverities" id="750">
-            <property name="style">text-2</property>
+            <property name="style">no-section-text</property>
+            <property name="color">black</property>
             <property name="pageBreakAfter">avoid</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P>Among the type of severities that we
@@ -28412,7 +28435,7 @@ in Pakistan cyberspace.</P>]]></text-property>
             <property name="outputFormat">SVG</property>
             <property name="inheritColumns">false</property>
             <property name="pageBreakAfter">auto</property>
-            <property name="marginTop">-150px</property>
+            <property name="marginTop">0px</property>
             <property name="height">300px</property>
             <property name="width">400px</property>
             <property name="dataSet">WebSeverities</property>
@@ -28430,7 +28453,7 @@ in Pakistan cyberspace.</P>]]></text-property>
                     <property name="dataType">string</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right2</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <text name="LabelSshAttacks" id="720">
             <property name="style">section-setting</property>
@@ -28464,7 +28487,7 @@ activities performed on SSH protocol in Pakistan cyberspace.</P>]]></text-proper
 <FONT color=#EA0000 face="Calibri Light"><B>Conducting SSH Attacks </B></P>]]></text-property>
         </text>
         <text name="TextSshCountries" id="723">
-            <property name="style">text-2</property>
+            <property name="style">no-section-text</property>
             <property name="marginTop">-40px</property>
             <property name="paddingTop">0pt</property>
             <property name="pageBreakAfter">avoid</property>
@@ -29351,7 +29374,7 @@ shown in the following figure</P>]]></text-property>
             <property name="outputFormat">SVG</property>
             <property name="inheritColumns">false</property>
             <property name="pageBreakAfter">auto</property>
-            <property name="marginTop">-170px</property>
+            <property name="marginTop">-10px</property>
             <property name="height">300px</property>
             <property name="width">400px</property>
             <property name="dataSet">SshCountries</property>
@@ -29375,7 +29398,7 @@ shown in the following figure</P>]]></text-property>
                     <property name="dataType">integer</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <text name="LabelSshIPs" id="726">
             <property name="style">heading-2</property>
@@ -29389,10 +29412,10 @@ shown in the following figure</P>]]></text-property>
 <FONT color=#EA0000 face="Calibri Light"><B>Conducting SSH Attacks</B></P>]]></text-property>
         </text>
         <text name="TextSshIPs" id="727">
-            <property name="style">text-2</property>
+            <property name="style">no-section-text</property>
             <property name="marginTop">-40px</property>
             <property name="paddingTop">0pt</property>
-            <property name="pageBreakAfter">avoid</property>
+            <property name="pageBreakAfter">auto</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P>Below table lists the IP addresses with origin
 that have carried out maximum SSH attacks in
@@ -30579,7 +30602,7 @@ to block these IP address on gateway level.</P>]]></text-property>
                     <property name="dataType">string</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right2</property>
+            <property name="style">center-graph</property>
         </extended-item>
         <table name="TableSshIPs" id="372">
             <property name="style">table-center</property>
@@ -30679,7 +30702,7 @@ to block these IP address on gateway level.</P>]]></text-property>
 <FONT color=#EA0000 face="Calibri Light"></BR><B>Used Usernames</B></P>]]></text-property>
         </text>
         <text name="TextSshUsernames" id="745">
-            <property name="style">text-2</property>
+            <property name="style">no-section-text</property>
             <property name="marginTop">-30px</property>
             <property name="paddingTop">0pt</property>
             <property name="pageBreakAfter">avoid</property>
@@ -30687,12 +30710,12 @@ to block these IP address on gateway level.</P>]]></text-property>
             <text-property name="content"><![CDATA[Below table lists the most user attempts seen in Pakistan for SSH. The <b>root</b> username was tried the most number of times. It is strongly recommended to avoid such user names or use complex user names or two factor authentications.]]></text-property>
         </text>
         <table name="TableSshUsernames" id="394">
-            <property name="style">table-right</property>
+            <property name="style">table-center</property>
             <property name="borderBottomStyle">none</property>
             <property name="borderLeftStyle">none</property>
             <property name="borderRightStyle">none</property>
             <property name="borderTopStyle">none</property>
-            <property name="marginTop">-170px</property>
+            <property name="marginTop">10px</property>
             <property name="textAlign">left</property>
             <property name="display">block</property>
             <property name="pageBreakAfter">auto</property>
@@ -30799,7 +30822,7 @@ to block these IP address on gateway level.</P>]]></text-property>
 <FONT color=#EA0000 face="Calibri Light"></BR><B>Used Passwords</B></P>]]></text-property>
         </text>
         <text name="TextSshPasswords" id="735">
-            <property name="style">text-2</property>
+            <property name="style">no-section-text</property>
             <property name="marginTop">-30px</property>
             <property name="paddingTop">0px</property>
             <property name="pageBreakAfter">avoid</property>
@@ -30807,8 +30830,8 @@ to block these IP address on gateway level.</P>]]></text-property>
             <text-property name="content"><![CDATA[Below table lists the most attempted passwords. The password <b>123456</b> was tried the most number of times. It is strongly recommended to avoid these types of passwords.]]></text-property>
         </text>
         <table name="TableSshPasswords" id="410">
-            <property name="style">table-right</property>
-            <property name="marginTop">-130px</property>
+            <property name="style">table-center</property>
+            <property name="marginTop">10px</property>
             <property name="pageBreakAfter">auto</property>
             <property name="dataSet">SshPasswords</property>
             <list-property name="boundDataColumns">
@@ -30877,13 +30900,13 @@ to block these IP address on gateway level.</P>]]></text-property>
             <property name="marginRight">500px</property>
             <property name="paddingTop">1px</property>
             <property name="pageBreakAfter">auto</property>
-            <property name="pageBreakBefore">always</property>
+            <property name="pageBreakBefore">auto</property>
             <property name="contentType">html</property>
             <text-property name="content"><![CDATA[<P><FONT color=#676767 face="Calibri Light">Mostly Used Tools For </FONT>
 <FONT color=#EA0000 face="Calibri Light"><B>SSH Based Attacks</B></P>]]></text-property>
         </text>
         <text name="TextSshTools" id="737">
-            <property name="style">text-2</property>
+            <property name="style">no-section-text</property>
             <property name="paddingTop">0pt</property>
             <property name="pageBreakAfter">avoid</property>
             <property name="contentType">html</property>
@@ -32056,7 +32079,7 @@ access on SSH in Pakistan cyberspace.</P>]]></text-property>
                     <property name="dataType">string</property>
                 </structure>
             </list-property>
-            <property name="style">graph-right2</property>
+            <property name="style">center-graph</property>
         </extended-item>
     </body>
     <list-property name="images">
