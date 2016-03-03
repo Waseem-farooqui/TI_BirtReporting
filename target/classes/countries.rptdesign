@@ -9176,7 +9176,7 @@ different regions of the World.</P>]]></text-property>
         <Bottom>0.0</Bottom>
         <Right>3.0</Right>
       </Insets>
-      <Visible>true</Visible>
+      <Visible>false</Visible>
     </Title>
     <TitlePosition>Below</TitlePosition>
     <AssociatedAxes>
